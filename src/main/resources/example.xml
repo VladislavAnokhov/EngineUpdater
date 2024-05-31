@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<ApplicationFile>
+    <FileHeader>
+        <FormatVersion>2.0</FormatVersion> <!-- Costante -->
+        <Sender>NESFDC</Sender> <!-- Costante -->
+        <CreationDate>2022-07-22</CreationDate>  <!-- Questo valore lo dobbiamo generare noi -->
+        <CreationTime>09:12:38</CreationTime>  <!-- Questo valore lo dobbiamo generare noi -->
+        <Number>99993</Number>  <!-- Questo valore lo dobbiamo generare noi incrementando di uno dal precedente -->
+        <Institution>0002</Institution> <!-- Costante -->
+    </FileHeader>
+    <ApplicationsList>
+        <Application>
+            <RegNumber>AA_OnBoard_${UUID}</RegNumber>  <!-- Questo valore lo dobbiamo generare noi in automatico, basta che sia univoco in tutto il file, es. un GUID/UUID-->
+            <Institution>0002</Institution>  <!-- Costante -->
+            <InstitutionIDType>Branch</InstitutionIDType> <!-- Costante -->
+            <OrderDprt>0102</OrderDprt> <!-- Costante -->
+            <ObjectType>ContractParameter</ObjectType> <!-- Costante -->
+            <ActionType>Update</ActionType> <!-- Costante -->
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>${PaymentContractID}</ContractNumber> <!-- PaymentContractID nel csv -->
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <Contract>
+                    <Product>
+                        <ProductCode1>${ProductCode1}</ProductCode1>
+                    </Product>
+                    <!--<DateOpen>2023-11-22</DateOpen> Data can be in the future for future updates -->
+                </Contract>
+                <CustomerParameters>
+                    <Parameter>
+                        <Code>${Param1}</Code> <!-- Param1 nel csv -->
+                        <Value>${Value1}</Value> <!-- Value1 nel csv -->
+                    </Parameter>
+                    <!-- Sezione Da mettere se Param2 valorizzato -->
+                    <Parameter>
+                        <Code>${Param2}</Code> <!-- Param2 nel csv  -->
+                        <Value>${Value2}</Value> <!-- Value2 nel csv -->
+                    </Parameter>
+                    <!-- Sezione Da mettere se Param3 valorizzato -->
+                    <Parameter>
+                        <Code>${Param3}</Code> <!-- Param3 nel csv -->
+                        <Value>${Value3}</Value> <!-- Value3 nel csv -->
+                    </Parameter>
+                </CustomerParameters>
+            </Data>
+        </Application>
+        <Application>
+            <RegNumber>AA_OnBoard_${UUID}</RegNumber>  <!-- Questo valore lo dobbiamo generare noi in automatico, basta che sia univoco in tutto il file, es. un GUID/UUID-->
+            <Institution>0002</Institution>  <!-- Costante -->
+            <InstitutionIDType>Branch</InstitutionIDType> <!-- Costante -->
+            <OrderDprt>0102</OrderDprt> <!-- Costante -->
+            <ObjectType>ContractParameter</ObjectType> <!-- Costante -->
+            <ActionType>Update</ActionType> <!-- Costante -->
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>${PaymentContractID}</ContractNumber> <!-- PaymentContractID nel csv -->
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <CustomerParameters>
+                    <Parameter>
+                        <Code>${Param1}</Code> <!-- Param1 nel csv -->
+                        <Value>${Value1}</Value> <!-- Value1 nel csv -->
+                    </Parameter>
+                    <!-- Sezione Da mettere se Param2 valorizzato -->
+                    <Parameter>
+                        <Code>${Param2}</Code> <!-- Param2 nel csv  -->
+                        <Value>${Value2}</Value> <!-- Value2 nel csv -->
+                    </Parameter>
+                    <!-- Sezione Da mettere se Param3 valorizzato -->
+                    <Parameter>
+                        <Code>${Param3}</Code> <!-- Param3 nel csv -->
+                        <Value>${Value3}</Value> <!-- Value3 nel csv -->
+                    </Parameter>
+                </CustomerParameters>
+            </Data>
+        </Application>
+        <Application>
+            <RegNumber>AA_OnBoard_${UUID}</RegNumber>  <!-- Questo valore lo dobbiamo generare noi in automatico, basta che sia univoco in tutto il file, es. un GUID/UUID-->
+            <Institution>0002</Institution>  <!-- Costante -->
+            <InstitutionIDType>Branch</InstitutionIDType> <!-- Costante -->
+            <OrderDprt>0102</OrderDprt> <!-- Costante -->
+            <ObjectType>ContractParameter</ObjectType> <!-- Costante -->
+            <ActionType>Update</ActionType> <!-- Costante -->
+            <ObjectFor>
+                <ContractIDT>
+                    <ContractNumber>${PaymentContractID}</ContractNumber> <!-- PaymentContractID nel csv -->
+                </ContractIDT>
+            </ObjectFor>
+            <Data>
+                <CustomerParameters>
+                    <Parameter>
+                        <Code>${Param1}</Code> <!-- Param1 nel csv -->
+                        <Value>${Value1}</Value> <!-- Value1 nel csv -->
+                    </Parameter>
+                    <!-- Sezione Da mettere se Param2 valorizzato -->
+                    <Parameter>
+                        <Code>${Param2}</Code> <!-- Param2 nel csv  -->
+                        <Value>${Value2}</Value> <!-- Value2 nel csv -->
+                    </Parameter>
+                    <!-- Sezione Da mettere se Param3 valorizzato -->
+                    <Parameter>
+                        <Code>${Param3}</Code> <!-- Param3 nel csv -->
+                        <Value>${Value3}</Value> <!-- Value3 nel csv -->
+                    </Parameter>
+                </CustomerParameters>
+            </Data>
+        </Application>
+    </ApplicationsList>
+</ApplicationFile>
